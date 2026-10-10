@@ -185,7 +185,7 @@ If you use this code, please cite the paper (details will be added after publica
   title   = {Physics-Informed Neural Network Surrogates for Model Predictive Control of a
              Nonisothermal Continuous Stirred Tank Reactor: A Multi-Seed Evaluation of
              Nominal Tracking and Robustness},
-  author  = {<Author names>},
+  author  = {<Md. Akkhor Hasan>},
   journal = {Journal of Process Control},
   year    = {<year>},
   note    = {Submitted}
