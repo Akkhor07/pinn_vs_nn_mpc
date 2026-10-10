@@ -6,7 +6,7 @@ A black-box neural network and a physics-informed neural network (PINN) with **i
 
 **Main finding:** physics-informed training did **not** significantly improve nominal tracking, but it made the controller much **more robust**. In a 16-condition disturbance sweep, thermal runaway occurred in **21 of 112** PINN-controlled runs versus **71 of 112** black-box runs, with fewer runaways in every seed.
 
-!\Methodology(docs/images/methodology.png)
+!Methodology(docs/images/methodology.png)
 
 \---
 
@@ -25,30 +25,30 @@ PINN-based MPC also solved faster than black-box MPC in every scenario (7/7 seed
 
 Top row: tracking error. Bottom row: fraction of seeds in which the reactor ran away.
 
-!\Disturbance sweep(docs/images/disturbance\_sweep.png)
+!Disturbance sweep(docs/images/disturbance\_sweep.png)
 
 ### Seed-to-seed variability
 
 Per-seed temperature RMSE and steady-state offset for every scenario.
 
-!\Seed variance(docs/images/seed\_variance.png)
+!Seed variance(docs/images/seed\_variance.png)
 
 ### Closed-loop behaviour under a 10 % feed-concentration step (seed 45)
 
 The black-box and first-principles controllers oscillate between extinction and ignition; the PINN controller stays considerably calmer.
 
-!\Closed loop, feed concentration(docs/images/closed\_loop\_feed\_concentration.png)
+!Closed loop, feed concentration(docs/images/closed\_loop\_feed\_concentration.png)
 
 <details>
 <summary>More figures: nominal closed loop and training curves</summary>
 
 **Nominal scenario (seed 45).** The first-principles controller tracks every setpoint; both learned controllers approach the 360 K and 370 K setpoints slowly.
 
-!\Closed loop, nominal(docs/images/closed\_loop\_nominal.png)
+!Closed loop, nominal(docs/images/closed\_loop\_nominal.png)
 
 **Training curves (seed 45):** data loss, validation loss (selected checkpoint marked), physics residual, and the physics-loss weight λ.
 
-!\Training curves(docs/images/training\_curves.png)
+!Training curves(docs/images/training\_curves.png)
 
 </details>
 
