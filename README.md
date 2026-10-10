@@ -5,7 +5,7 @@ Code for the study *"Physics-Informed Neural Network Surrogates for Model Predic
 A black-box neural network and a physics-informed neural network (PINN) with **identical architecture** are used as prediction models inside the **same offset-free nonlinear MPC** of an open-loop-unstable CSTR, with a first-principles NMPC as reference. The complete workflow (data generation, training, all closed-loop runs) is repeated over **seven random seeds** and compared with paired statistics.
 
 **Main finding:** physics-informed training did **not** significantly improve nominal tracking, but it made the controller much **more robust**. In a 16-condition disturbance sweep, thermal runaway occurred in **21 of 112** PINN-controlled runs versus **71 of 112** black-box runs, with fewer runaways in every seed.
-
+![Graphical Abstract](docs/images/graphical_abstract.png)
 ![Methodology](docs/images/methodology.png)
 
 \---
