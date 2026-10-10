@@ -6,7 +6,7 @@ A black-box neural network and a physics-informed neural network (PINN) with **i
 
 **Main finding:** physics-informed training did **not** significantly improve nominal tracking, but it made the controller much **more robust**. In a 16-condition disturbance sweep, thermal runaway occurred in **21 of 112** PINN-controlled runs versus **71 of 112** black-box runs, with fewer runaways in every seed.
 
-!Methodology(docs/images/methodology.png)
+![Methodology](docs/images/methodology.png)
 
 \---
 
